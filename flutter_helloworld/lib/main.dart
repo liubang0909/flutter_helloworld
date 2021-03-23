@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'demo/drawer_demo.dart';
+import 'demo/bottomNavigationBar_demo.dart';
+import 'demo/listView_demo.dart';
 
 void main() => runApp(App());
 
@@ -18,8 +20,6 @@ class App extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
-  const Home({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -55,11 +55,13 @@ class Home extends StatelessWidget {
             ],
           ),
           body: TabBarView(children: <Widget>[
-            Icon(Icons.local_florist, size: 120, color: Colors.pink),
+            ListViewDemo(),
             Icon(Icons.local_florist, size: 120, color: Colors.yellow),
             Icon(Icons.local_florist, size: 120, color: Colors.black12)
           ]),
           drawer: DrawerDemo(),
+          bottomNavigationBar: BottomNavigationBarDemo(),
+
           // endDrawer: Text('right drawer'),
         ),
       ),
