@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'demo/drawer_demo.dart';
 import 'demo/bottomNavigationBar_demo.dart';
 import 'demo/listView_demo.dart';
+import 'demo/basic_demo.dart';
 
 void main() => runApp(App());
 
@@ -56,7 +57,7 @@ class Home extends StatelessWidget {
           ),
           body: TabBarView(children: <Widget>[
             ListViewDemo(),
-            Icon(Icons.local_florist, size: 120, color: Colors.yellow),
+            BasicDemo(),
             Icon(Icons.local_florist, size: 120, color: Colors.black12)
           ]),
           drawer: DrawerDemo(),
