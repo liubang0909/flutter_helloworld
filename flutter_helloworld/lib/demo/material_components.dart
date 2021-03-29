@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../demo/button_demo.dart';
-import '../demo//float_action_button_demo.dart';
+import '../demo/float_action_button_demo.dart';
+import '../demo/popup_menu_button_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   const MaterialComponents({Key key}) : super(key: key);
@@ -22,6 +23,10 @@ class MaterialComponents extends StatelessWidget {
             ListItem(
               title: 'ButtonDemo',
               page: ButtonDemo(),
+            ),
+            ListItem(
+              title: 'PopupMenuButtonDemo',
+              page: PopupMenuButtonDemo(),
             )
           ],
         ),
