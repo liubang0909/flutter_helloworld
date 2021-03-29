@@ -6,6 +6,7 @@ import '../demo/form_demo.dart';
 import '../demo/checkbox_demo.dart';
 import '../demo/radio_demo.dart';
 import '../demo/switch_demo.dart';
+import '../demo/slider_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   const MaterialComponents({Key key}) : super(key: key);
@@ -20,6 +21,7 @@ class MaterialComponents extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            ListItem(title: 'Slider', page: SliderDemo()),
             ListItem(title: 'Switch', page: SwitchDemo()),
             ListItem(title: 'Radio', page: RadioDemo()),
             ListItem(title: 'Checkbox', page: CheckboxDemo()),
