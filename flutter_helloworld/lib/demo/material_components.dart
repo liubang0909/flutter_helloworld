@@ -10,6 +10,7 @@ import '../demo/slider_demo.dart';
 import '../demo/datetime_demo.dart';
 import '../demo/simple_dialog_demo.dart';
 import '../demo/alert_dialog_demo.dart';
+import '../demo/bottom_sheet_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   const MaterialComponents({Key key}) : super(key: key);
@@ -24,6 +25,7 @@ class MaterialComponents extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            ListItem(title: 'BottomSheet', page: BottomSheetDemo()),
             ListItem(title: 'AlertDialog', page: AlertDialogDemo()),
             ListItem(
               title: 'SimpleDialog',
