@@ -7,6 +7,10 @@ class FormDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('Form'),
+          elevation: 0,
+        ),
         body: Theme(
             data: Theme.of(context).copyWith(primaryColor: Colors.orange),
             child: Container(
