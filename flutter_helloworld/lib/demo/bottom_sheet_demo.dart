@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 class BottomSheetDemo extends StatefulWidget {
   BottomSheetDemo({Key key}) : super(key: key);

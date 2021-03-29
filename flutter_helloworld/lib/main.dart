@@ -4,7 +4,7 @@ import 'demo/bottomNavigationBar_demo.dart';
 import 'demo/listView_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/layout_demo.dart';
-import 'demo/view_demo.dart';
+// import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigator_demo.dart';
 import 'demo/form_demo.dart';
