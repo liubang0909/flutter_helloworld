@@ -22,12 +22,12 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
             title: Text('你好'),
             content: Text('我是content'),
             actions: [
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.pop(context, Action.Cancle);
                   },
                   child: Text('cancle')),
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.pop(context, Action.Ok);
                   },
@@ -76,7 +76,7 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  RaisedButton(
+                  ElevatedButton(
                       onPressed: _openAlertDialog, child: Text('AlertDialog'))
                 ],
               )

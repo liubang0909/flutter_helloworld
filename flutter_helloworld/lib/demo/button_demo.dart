@@ -4,18 +4,26 @@ class ButtonDemo extends StatelessWidget {
   final Widget flatButtonDemo = Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      FlatButton(
+      TextButton(
         onPressed: () {},
         child: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.black,
+        style: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all(Colors.blue),
+          overlayColor: MaterialStateProperty.all(Colors.blue),
+        ),
+        // splashColor: Colors.blue,
+        // textColor: Colors.black,
       ),
-      FlatButton.icon(
+      TextButton.icon(
         onPressed: () {},
         icon: Icon(Icons.access_alarm_outlined),
         label: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.red,
+        style: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all(Colors.red),
+          overlayColor: MaterialStateProperty.all(Colors.blue),
+        ),
+        // splashColor: Colors.blue,
+        // textColor: Colors.red,
       )
     ],
   );
@@ -23,45 +31,48 @@ class ButtonDemo extends StatelessWidget {
   final Widget raisedButtonDemo = Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      RaisedButton(
+      ElevatedButton(
         onPressed: () {},
         child: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.black,
-        color: Colors.blue,
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.black),
+            backgroundColor: MaterialStateProperty.all(Colors.blue),
+            overlayColor: MaterialStateProperty.all(Colors.blue)),
       ),
       SizedBox(
         width: 16,
       ),
-      RaisedButton.icon(
+      ElevatedButton.icon(
         onPressed: () {},
         icon: Icon(
           Icons.access_alarm_outlined,
         ),
         label: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.red,
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.red),
+            overlayColor: MaterialStateProperty.all(Colors.blue)),
       )
     ],
   );
   final Widget outlineButtonDemo = Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      OutlineButton(
+      OutlinedButton(
         onPressed: () {},
         child: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.black,
-        color: Colors.blue,
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.black),
+            overlayColor: MaterialStateProperty.all(Colors.blue)),
       ),
-      OutlineButton.icon(
+      OutlinedButton.icon(
         onPressed: () {},
         icon: Icon(
           Icons.access_alarm_outlined,
         ),
         label: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.red,
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.black),
+            overlayColor: MaterialStateProperty.all(Colors.blue)),
       )
     ],
   );
@@ -69,23 +80,25 @@ class ButtonDemo extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Expanded(
-          child: OutlineButton(
+          child: OutlinedButton(
         onPressed: () {},
         child: Text('Button'),
-        splashColor: Colors.blue,
-        textColor: Colors.black,
+        style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.all(Colors.black),
+            overlayColor: MaterialStateProperty.all(Colors.blue)),
       )),
       SizedBox(
         width: 16,
       ),
       Expanded(
         flex: 2,
-        child: OutlineButton.icon(
+        child: OutlinedButton.icon(
           onPressed: () {},
           icon: Icon(Icons.access_alarm_outlined),
           label: Text('Button'),
-          splashColor: Colors.blue,
-          textColor: Colors.red,
+          style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all(Colors.black),
+              overlayColor: MaterialStateProperty.all(Colors.blue)),
         ),
       ),
     ],

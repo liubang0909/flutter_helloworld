@@ -38,7 +38,7 @@ class _RegisterFormDemoState extends State<RegisterFormDemo> {
   void submitForm() {
     registerFormKey.currentState.save();
     registerFormKey.currentState.validate();
-    Scaffold.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text('正在注册'),
     ));
     debugPrint("$username,$password");
@@ -89,11 +89,12 @@ class _RegisterFormDemoState extends State<RegisterFormDemo> {
               Container(
                 width: double.infinity,
                 height: 40,
-                child: RaisedButton(
-                  color: Theme.of(context).accentColor,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5)),
-                  elevation: 0,
+                child: ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.red),
+                      elevation: MaterialStateProperty.all(0),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5)))),
                   child: Text(
                     '提交',
                     style: TextStyle(

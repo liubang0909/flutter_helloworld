@@ -110,15 +110,15 @@ class _BottomSheetDemoState extends State<BottomSheetDemo> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FlatButton(
+                  TextButton(
                       onPressed: _openBottomSheet,
                       child: Text('open BottomSheet')),
                 ],
               ),
-              FlatButton(
+              TextButton(
                   onPressed: _openModalBottomSheet,
                   child: Text('open Modal BottomSheet')),
-              FlatButton(
+              TextButton(
                   onPressed: _openModalBottomOtherSheet,
                   child: Text('open Modal Other BottomSheet')),
             ],

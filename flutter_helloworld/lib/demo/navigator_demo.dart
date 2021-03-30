@@ -11,8 +11,8 @@ class NavigatorDemo extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              FlatButton(onPressed: null, child: Text("Home")),
-              FlatButton(
+              TextButton(onPressed: null, child: Text("Home")),
+              TextButton(
                   onPressed: () => (Navigator.pushNamed(context, "/about")
                       // Navigator.of(context).pushNamed('/about')
 

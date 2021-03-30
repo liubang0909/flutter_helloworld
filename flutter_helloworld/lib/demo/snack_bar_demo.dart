@@ -38,9 +38,9 @@ class SnackBarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: FlatButton(
+      child: TextButton(
           onPressed: () {
-            Scaffold.of(context).showSnackBar(SnackBar(
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: Text('展示文本'),
               action: SnackBarAction(
                 label: 'Ok',
