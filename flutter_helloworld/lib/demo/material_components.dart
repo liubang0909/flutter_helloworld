@@ -14,6 +14,8 @@ import '../demo/bottom_sheet_demo.dart';
 import '../demo/snack_bar_demo.dart';
 import '../demo/expansion_panel_demo.dart';
 import '../demo/chip_demo.dart';
+import '../demo/data_table_demo.dart';
+import '../demo/paginated_data_table_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   const MaterialComponents({Key key}) : super(key: key);
@@ -28,6 +30,11 @@ class MaterialComponents extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            ListItem(
+              title: 'PaginatedDataTable',
+              page: PaginatedDataTableDemo(),
+            ),
+            ListItem(title: 'DataTable', page: DataTableDemo()),
             ListItem(title: 'Chip', page: ChipDemo()),
             ListItem(title: 'ExpansionPanel', page: ExpansionPanelDemo()),
             ListItem(title: 'SnackBar', page: SnackBarDemo()),

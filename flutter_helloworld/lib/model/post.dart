@@ -1,9 +1,11 @@
 class Post {
-  const Post({this.title, this.author, this.imageUrl});
+  Post({this.title, this.author, this.imageUrl});
 
   final String title;
   final String author;
   final String imageUrl;
+
+  bool selected = false;
 }
 
 final List<Post> posts = [
@@ -81,7 +83,7 @@ final List<Post> posts1 = [
       imageUrl:
           "https://bkimg.cdn.bcebos.com/pic/94cad1c8a786c9178694d3e8c73d70cf3ac75748?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto"),
   Post(
-      title: "wanzi2",
+      title: "wanzi12",
       author: "liubang",
       imageUrl:
           "https://bkimg.cdn.bcebos.com/pic/8d5494eef01f3a29fb43521f9725bc315d607c5c?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto"),
