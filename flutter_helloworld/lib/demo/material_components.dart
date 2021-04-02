@@ -17,6 +17,7 @@ import '../demo/chip_demo.dart';
 import '../demo/data_table_demo.dart';
 import '../demo/paginated_data_table_demo.dart';
 import '../demo/card_demo.dart';
+import '../demo/stepper_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   const MaterialComponents({Key key}) : super(key: key);
@@ -31,6 +32,10 @@ class MaterialComponents extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            ListItem(
+              title: 'Stepper',
+              page: StepperDemo(),
+            ),
             ListItem(title: 'Card', page: CardDemo()),
             ListItem(
               title: 'PaginatedDataTable',
