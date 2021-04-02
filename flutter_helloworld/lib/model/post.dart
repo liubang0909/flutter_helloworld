@@ -6,6 +6,8 @@ class Post {
   final String imageUrl;
 
   bool selected = false;
+  String describe =
+      '丸子呦（别名：丸子）是一名网络女歌手 ，音乐代表作《广寒宫》、《甜》、《君在城墙下，我在城墙上》、《星河散尽故人来》网络主播、虎牙直播平台签约主播。';
 }
 
 final List<Post> posts = [
