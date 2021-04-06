@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'demo/stream/stream_demo.dart';
 import 'demo/drawer_demo.dart';
 import 'demo/bottomNavigationBar_demo.dart';
 import 'demo/listView_demo.dart';
@@ -19,13 +20,14 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: NavigatorDemo(),
-      initialRoute: '/state-management',
+      initialRoute: '/stream',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => (PageDemo(title: 'About')),
         '/form': (context) => (FormDemo()),
         '/mdc': (context) => (MaterialComponents()),
-        '/state-management': (context) => (ScopedModelDemo())
+        '/state-management': (context) => (ScopedModelDemo()),
+        '/stream': (context) => (StreamDemo())
       },
       theme: ThemeData(
           primaryColor: Colors.blue,
