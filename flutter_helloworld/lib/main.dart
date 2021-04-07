@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'demo/bloc/bloc_demo.dart';
 import 'demo/stream/stream_demo.dart';
 import 'demo/drawer_demo.dart';
 import 'demo/bottomNavigationBar_demo.dart';
@@ -21,7 +22,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: NavigatorDemo(),
-      initialRoute: '/rxdart',
+      initialRoute: '/bloc',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => (PageDemo(title: 'About')),
@@ -29,7 +30,8 @@ class App extends StatelessWidget {
         '/mdc': (context) => (MaterialComponents()),
         '/state-management': (context) => (ScopedModelDemo()),
         '/stream': (context) => (StreamDemo()),
-        '/rxdart': (context) => (RxDartDemo())
+        '/rxdart': (context) => (RxDartDemo()),
+        '/bloc': (context) => (BlocDemo())
       },
       theme: ThemeData(
           primaryColor: Colors.blue,
