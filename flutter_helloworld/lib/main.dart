@@ -12,6 +12,7 @@ import 'demo/form_demo.dart';
 import 'demo/material_components.dart';
 // import 'demo/state/state_management_demo.dart';
 import 'demo/state/scoped_model_demo.dart';
+import 'demo/rxdart/rxdart_demo.dart';
 
 void main() => runApp(App());
 
@@ -20,14 +21,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: NavigatorDemo(),
-      initialRoute: '/stream',
+      initialRoute: '/rxdart',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => (PageDemo(title: 'About')),
         '/form': (context) => (FormDemo()),
         '/mdc': (context) => (MaterialComponents()),
         '/state-management': (context) => (ScopedModelDemo()),
-        '/stream': (context) => (StreamDemo())
+        '/stream': (context) => (StreamDemo()),
+        '/rxdart': (context) => (RxDartDemo())
       },
       theme: ThemeData(
           primaryColor: Colors.blue,
